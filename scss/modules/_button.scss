@@ -1,0 +1,103 @@
+.btn {
+  display: inline-block;
+  padding: .375rem 1rem;
+  border-radius: $border-radius;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  text-align: center;
+  font-family: $lexend;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include media-breakpoint-up(xl) {
+    width: initial;
+  }
+}
+
+.btns-container {
+  @include media-breakpoint-up(xl) {
+    .btn + .btn {
+      margin-left: 1rem;
+    }
+
+    &--flex {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: space-between;
+
+      .btn {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+@mixin btn-variant($name, $colors) {
+  $background: map-get($colors, '500');
+  background-color: $background;
+  // Choose between light or dark colors according to background color.
+  color: color-contrast($background);
+  border: 2px solid map-get($colors, '500');
+  cursor: pointer;
+
+  &:hover {
+    background-color: map-get($colors, '600');
+    // Choose between light or dark colors according to background color.
+    color: color-contrast(map-get($colors, '600'));
+    text-decoration: color-contrast(map-get($colors, '600')) wavy underline;
+    border: 2px solid map-get($colors, '600');
+  }
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    text-decoration: color-contrast(map-get($colors, '500')) wavy underline;
+    outline: 2px solid map-get($colors, '500');
+
+  }
+}
+
+@mixin btn-reverse-variant($name, $colors) {
+  $color: map-get($colors, '500');
+
+  // Choose between light or dark colors according to background color.
+  background-color: color-contrast($color);
+  color: $color;
+  border: 2px solid $color;
+  transition: .3s ease all;
+  cursor: pointer;
+
+  &:hover {
+    background-color: map-get($colors, '500');
+    // Choose between light or dark colors according to background color.
+    color: color-contrast(map-get($colors, '500'));
+    text-decoration: color-contrast(map-get($colors, '500')) wavy underline;
+  }
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    text-decoration: map-get($colors, '500') wavy underline;
+    outline: 2px solid map-get($colors, '600')
+  }
+}
+
+
+@each $name, $colors in $theme-colors {
+  .btn--#{$name} {
+    @include btn-variant($name, $colors);
+  }
+}
+
+@each $name, $colors in $theme-colors {
+  .btn--reverse {
+    &.btn--#{$name} {
+      @include btn-reverse-variant($name, $colors);
+    }
+  }
+}

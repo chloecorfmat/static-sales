@@ -1,0 +1,145 @@
+$snow: #ffffff;
+
+$slate: #3c3c3c !default;
+$slate-100: tint-color($slate, 80%) !default;
+$slate-200: tint-color($slate, 60%) !default;
+$slate-300: tint-color($slate, 40%) !default;
+$slate-400: tint-color($slate, 20%) !default;
+$slate-500: $slate !default;
+$slate-600: shade-color($slate, 20%) !default;
+$slate-700: shade-color($slate, 40%) !default;
+$slate-800: shade-color($slate, 60%) !default;
+$slate-900: shade-color($slate, 80%) !default;
+
+$cream: #f4efe4 !default;
+$cream-100: tint-color($cream, 80%) !default;
+$cream-200: tint-color($cream, 60%) !default;
+$cream-300: tint-color($cream, 40%) !default;
+$cream-400: tint-color($cream, 20%) !default;
+$cream-500: $cream !default;
+$cream-600: shade-color($cream, 20%) !default;
+$cream-700: shade-color($cream, 40%) !default;
+$cream-800: shade-color($cream, 60%) !default;
+$cream-900: shade-color($cream, 80%) !default;
+
+$poppy: #de5d5c !default;
+$poppy-100: tint-color($poppy, 80%) !default;
+$poppy-200: tint-color($poppy, 60%) !default;
+$poppy-300: tint-color($poppy, 40%) !default;
+$poppy-400: tint-color($poppy, 20%) !default;
+$poppy-500: $poppy !default;
+$poppy-600: shade-color($poppy, 20%) !default;
+$poppy-700: shade-color($poppy, 40%) !default;
+$poppy-800: shade-color($poppy, 60%) !default;
+$poppy-900: shade-color($poppy, 80%) !default;
+
+$frozen: #7ab8a4 !default;
+$frozen-100: tint-color($frozen, 80%) !default;
+$frozen-200: tint-color($frozen, 60%) !default;
+$frozen-300: tint-color($frozen, 40%) !default;
+$frozen-400: tint-color($frozen, 20%) !default;
+$frozen-500: $frozen !default;
+$frozen-600: shade-color($frozen, 20%) !default;
+$frozen-700: shade-color($frozen, 40%) !default;
+$frozen-800: shade-color($frozen, 60%) !default;
+$frozen-900: shade-color($frozen, 80%) !default;
+
+$apple: #d1d193 !default;
+$apple-100: tint-color($apple, 80%) !default;
+$apple-200: tint-color($apple, 60%) !default;
+$apple-300: tint-color($apple, 40%) !default;
+$apple-400: tint-color($apple, 20%) !default;
+$apple-500: $apple !default;
+$apple-600: shade-color($apple, 20%) !default;
+$apple-700: shade-color($apple, 40%) !default;
+$apple-800: shade-color($apple, 60%) !default;
+$apple-900: shade-color($apple, 80%) !default;
+
+$sugared: #edbcb6 !default;
+$sugared-100: tint-color($sugared, 80%) !default;
+$sugared-200: tint-color($sugared, 60%) !default;
+$sugared-300: tint-color($sugared, 40%) !default;
+$sugared-400: tint-color($sugared, 20%) !default;
+$sugared-500: $sugared !default;
+$sugared-600: shade-color($sugared, 20%) !default;
+$sugared-700: shade-color($sugared, 40%) !default;
+$sugared-800: shade-color($sugared, 60%) !default;
+$sugared-900: shade-color($sugared, 80%) !default;
+
+$danger: $poppy !default;
+$danger-100: $poppy-100 !default;
+$danger-200: $poppy-200 !default;
+$danger-300: $poppy-300 !default;
+$danger-400: $poppy-400 !default;
+$danger-500: $poppy-500 !default;
+$danger-600: $poppy-600 !default;
+$danger-700: $poppy-700 !default;
+$danger-800: $poppy-800 !default;
+$danger-900: $poppy-900 !default;
+
+$success: $frozen !default;
+$success-100: $frozen-100 !default;
+$success-200: $frozen-200 !default;
+$success-300: $frozen-300 !default;
+$success-400: $frozen-400 !default;
+$success-500: $frozen-500 !default;
+$success-600: $frozen-600 !default;
+$success-700: $frozen-700 !default;
+$success-800: $frozen-800 !default;
+$success-900: $frozen-900 !default;
+
+$primary: $poppy !default;
+$primary-100: $poppy-100 !default;
+$primary-200: $poppy-200 !default;
+$primary-300: $poppy-300 !default;
+$primary-400: $poppy-400 !default;
+$primary-500: $poppy-500 !default;
+$primary-600: $poppy-600 !default;
+$primary-700: $poppy-700 !default;
+$primary-800: $poppy-800 !default;
+$primary-900: $poppy-900 !default;
+
+$primaries: (
+        '100': $primary-100,
+        '200': $primary-200,
+        '300': $primary-300,
+        '400': $primary-400,
+        '500': $primary-500,
+        '600': $primary-600,
+        '700': $primary-700,
+        '800': $primary-800,
+        '900': $primary-900
+);
+
+$successes: (
+        '100': $success-100,
+        '200': $success-100,
+        '300': $success-100,
+        '400': $success-100,
+        '500': $success-500,
+        '600': $success-600,
+        '700': $success-700,
+        '800': $success-800,
+        '900': $success-900
+);
+
+
+$dangers: (
+        '100': $danger-100,
+        '200': $danger-200,
+        '300': $danger-300,
+        '400': $danger-400,
+        '500': $danger-500,
+        '600': $danger-600,
+        '700': $danger-700,
+        '800': $danger-800,
+        '900': $danger-900
+);
+
+$theme-colors: (
+        "primary": $primaries,
+        "success": $successes,
+        "danger": $dangers
+);
+
+$white: $cream;
