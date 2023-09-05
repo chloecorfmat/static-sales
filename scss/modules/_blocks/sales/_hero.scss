@@ -2,7 +2,7 @@
     background: $cream;
     margin: 0;
     position: relative;
-    padding: 1rem;
+    padding: 1rem 1rem 5rem;
 
     @include media-breakpoint-up(xl) {
       padding: 0 15rem 7rem;
@@ -31,6 +31,7 @@
     @include media-breakpoint-up(xl) {
       max-width: 75%;
       text-align: left;
+      margin: 0 0 2rem;
     }
   }
 

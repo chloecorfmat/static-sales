@@ -1,0 +1,99 @@
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  list-style-type: none;
+  padding-top: 12rem;
+  padding-left: 0;
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 15rem;
+    gap: 15rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 20rem;
+    gap: 20rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+    padding-left: initial;
+    gap: 2rem;
+    padding-top: 8rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-top: 12rem;
+  }
+}
+
+.cards-item {
+  width: initial;
+  border-radius: $border-radius;
+  border: 2px solid $cream;
+  padding: 5rem 1rem 1rem;
+  text-align: center;
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    width: 33%;
+    padding: 4rem 1rem 1rem;
+  }
+
+  // Image dimensions : 270*200px
+  &__image {
+    width: 60%;
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-up(sm) {
+      width: 55%;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 45%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 45%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 70%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: 70%;
+      position: absolute;
+      bottom: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    width: 80%;
+    margin: auto;
+
+    @include media-breakpoint-up(xl) {
+      width: 95%;
+    }
+  }
+
+  &__list {
+    margin-top: 2rem;
+    text-align: left;
+    list-style-image: url("../assets/bullet_15px.png");
+    list-style-position: outside;
+  }
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

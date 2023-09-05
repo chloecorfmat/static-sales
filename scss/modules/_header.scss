@@ -101,6 +101,7 @@
         color: $poppy;
         text-decoration: $poppy wavy underline;
         outline: none;
+        background: none;
       }
     }
 
@@ -163,12 +164,17 @@
   }
 
   @include media-breakpoint-up(xl) {
+    display: flex;
+
     &__item {
       &:not(:first-child) {
         margin-left: 1rem;
       }
     }
-    display: flex;
+
+    &--show {
+      width: initial;
+    }
   }
 }
 

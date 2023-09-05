@@ -5,6 +5,33 @@ h1 {
   font-size: 2.5rem;
 }
 
+h2 {
+  color: $slate;
+  text-transform: uppercase;
+  font-family: $lexend;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+  text-align: left;
+
+  .highlighted {
+    color: $primary;
+  }
+
+  @include media-breakpoint-up(xl) {
+    text-align: center;
+  }
+}
+
+h3 {
+  color: $slate;
+  font-family: $corfmat;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+}
+
 p,
 li {
   font-family: $lexend;

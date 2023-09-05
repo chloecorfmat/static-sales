@@ -13,13 +13,14 @@
   width: 100%;
   box-sizing: border-box;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(xxl) {
     width: initial;
   }
 }
 
 .btns-container {
-  @include media-breakpoint-up(xl) {
+
+  @include media-breakpoint-up(xxl) {
     .btn + .btn {
       margin-left: 1rem;
     }
