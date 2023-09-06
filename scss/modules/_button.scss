@@ -19,6 +19,9 @@
 }
 
 .btns-container {
+  &--centered {
+    text-align: center;
+  }
 
   @include media-breakpoint-up(xxl) {
     .btn + .btn {
