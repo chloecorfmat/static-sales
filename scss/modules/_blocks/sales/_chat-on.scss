@@ -1,0 +1,56 @@
+.block-chat-on {
+  width: 100%;
+  background: $cream;
+
+  &__container {
+    padding: 3rem 1rem 0;
+    max-width: 1200px;
+    margin: auto;
+
+    @include media-breakpoint-up(xl) {
+      padding: 7rem 15rem 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      width: 50%;
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    @include media-breakpoint-up(xl) {
+      width: 60%;
+      position: absolute;
+      bottom: 0;
+      right: -15%;
+
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+
+}
