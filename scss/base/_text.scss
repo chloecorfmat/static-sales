@@ -12,14 +12,10 @@ h2 {
   font-weight: 700;
   font-size: 3rem;
   margin: 0;
-  text-align: left;
+  text-align: center;
 
   .highlighted {
     color: $primary;
-  }
-
-  @include media-breakpoint-up(xl) {
-    text-align: center;
   }
 }
 
@@ -44,7 +40,7 @@ li {
   font-size: 1.2rem;
 }
 
-strong {
+.strong {
   font-family: $lexend;
   font-weight: 700;
 }

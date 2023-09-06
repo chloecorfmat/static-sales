@@ -1,0 +1,17 @@
+.block-steps {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+
+  @include media-breakpoint-up(xl) {
+    padding: 7rem 15rem 7rem;
+  }
+
+  &__infos {
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 5rem;
+    }
+  }
+}

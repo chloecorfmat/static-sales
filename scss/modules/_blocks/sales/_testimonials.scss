@@ -1,0 +1,50 @@
+.block-testimonials {
+  width: 100%;
+  background: $cream;
+
+  &__container {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+
+    @include media-breakpoint-up(xl) {
+      padding: 7rem 15rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__blockquote {
+    text-align: center;
+    margin: 3rem 0 0;
+
+    @include media-breakpoint-up(xl) {
+      margin: 5rem 0 0;
+    }
+  }
+
+  &__quote {
+    font-family: $corfmat;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+
+    &:before {
+      content: open-quote
+    }
+
+    &:after {
+      content: close-quote
+    }
+  }
+
+  &__quote-author {
+    font-size: 1rem;
+    margin: 0;
+    text-align: right;
+  }
+
+}
