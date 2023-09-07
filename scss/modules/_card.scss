@@ -32,7 +32,6 @@
   width: initial;
   border-radius: $border-radius;
   border: 2px solid $cream;
-  padding: 5rem 1rem 1rem;
   text-align: center;
   position: relative;
 
@@ -42,7 +41,6 @@
     justify-content: start;
     align-items: center;
     width: 33%;
-    padding: 4rem 1rem 1rem;
   }
 
   // Image dimensions : 270*200px
@@ -81,16 +79,57 @@
   &__title {
     width: 80%;
     margin: auto;
+    text-align: center;
 
     @include media-breakpoint-up(xl) {
       width: 95%;
     }
   }
 
+  &__content {
+    padding: 5rem 1rem 1rem;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include media-breakpoint-up(xl) {
+      padding: 4rem 1rem 1rem;
+    }
+  }
+
   &__list {
     margin-top: 2rem;
     text-align: left;
-    list-style-image: url("../assets/bullet_15px.png");
+    list-style-image: url("./assets/bullet_15px.png");
     list-style-position: outside;
+  }
+}
+
+.cards-item--foldable {
+  .cards-item {
+    &__content {
+      &--fold {
+        height: 100%;
+        background: $cream;
+      }
+
+      &--unfold {
+        padding-top: 0;
+
+        .cards-item__list {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.cards-item__content--unfold {
+  &[aria-hidden=true] {
+    display: none;
+  }
+
+  &[aria-hidden=false] {
+    display: block;
   }
 }
