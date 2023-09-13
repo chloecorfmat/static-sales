@@ -51,7 +51,10 @@
     </header>
     <main>
         <div class="block-hero">
-            <img src="./assets/01_sales.png" alt="" class="block-hero__asset--1"/>
+            <picture class="block-hero__asset--1">
+                <source srcset="./assets/01_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/01_sales-mobile.png" alt="" />
+            </picture>
 
             <div class="block-hero__content">
                 <img src="./assets/01_photo_blob.png" alt="Portrait de Chloé Corfmat" class="block-hero__image"/>
@@ -70,6 +73,11 @@
         </div>
         <div class="block-why">
             <!-- @Todo : blobs -->
+            <picture class="block-why__asset--1">
+                <source srcset="./assets/03_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/03_sales-mobile.png" alt="" />
+            </picture>
+
             <h2>Pourquoi un <span class="highlighted">site web</span> ?</h2>
             <ul class="cards-list">
                 <li class="cards-item">
@@ -107,8 +115,16 @@
                 </li>
             </ul>
             <!-- @Todo : blobs -->
+            <picture class="block-why__asset--2">
+                <source srcset="./assets/04_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/04_sales-mobile.png" alt="" />
+            </picture>
         </div>
         <div class="block-presentation">
+            <picture class="block-presentation__asset--1">
+                <source srcset="./assets/05_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/01_sales-mobile.png" alt="" />
+            </picture>
             <h2 class="sr-only">À propos de Chloé Corfmat</h2>
             <div class="block-presentation__row">
                 <img src="./assets/photos/Chloe-Corfmat-01.jpg" alt=""  class="block-presentation__image"/>
@@ -134,12 +150,21 @@
                 </div>
                 <img src="./assets/photos/Chloe-Corfmat-02.jpg" alt=""  class="block-presentation__image"/>
             </div>
+
+            <picture class="block-presentation__asset--2">
+                <source srcset="./assets/06_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/06_sales-mobile.png" alt="" />
+            </picture>
         </div>
         <div class="block-offers">
+            <picture class="block-offers__asset--1">
+                <source srcset="./assets/07_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/07_sales-mobile.png" alt="" />
+            </picture>
+
             <h2>Je vous <span class="highlighted">accompagne</span></h2>
             <p class="block-offers__infos">Ensemble, nous construisons votre site 100% adapté à vos besoins, accessibles aux personnes handicapées, tout en respectant les standards d’assurance qualité web et les lois en matière de protection des données.</p>
             <div class="switcher">
-                <!-- @Todo : Switcher -->
                 <button class="switcher__item switcher__item--active" data-foldable="true">Je ne maîtrise pas trop</button>
                 <button class="switcher__item" data-foldable="false">Je veux des détails</button>
             </div>
@@ -199,6 +224,11 @@
                     </div>
                 </li>
             </ul>
+
+            <picture class="block-offers__asset--2">
+                <source srcset="./assets/08_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/08_sales-mobile.png" alt="" />
+            </picture>
         </div>
         <div class="block-chat-on">
             <div class="block-chat-on__container">
@@ -219,7 +249,11 @@
 
         </div>
         <div class="block-steps">
-            <!-- @Todo : blobs -->
+            <picture class="block-steps__asset--1">
+                <source srcset="./assets/09_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/09_sales-mobile.png" alt="" />
+            </picture>
+
             <h2>Travaillons <span class="highlighted">ensemble</span> !</h2>
             <ul class="cards-list">
                 <li class="cards-item">
@@ -253,7 +287,11 @@
                     <li>une réponse garantie par mail sous 72h ouvrées maximum (hors vacances)</li>
                 </ul>
             </div>
-            <!-- @Todo : blobs -->
+
+            <picture class="block-steps__asset--2">
+                <source srcset="./assets/10_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/10_sales-mobile.png" alt="" />
+            </picture>
         </div>
         <div class="block-testimonials">
             <div class="block-testimonials__container">
@@ -275,6 +313,11 @@
             </div>
         </div>
         <div class="block-meet">
+            <picture class="block-meet__asset--1">
+                <source srcset="./assets/11_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/11_sales-mobile.png" alt="" />
+            </picture>
+
             <h2>Rencontrons-<span class="highlighted">nous</span> !</h2>
             <div class="block-meet__content">
                 <div class="block-meet__column">
@@ -346,6 +389,11 @@
                     </ul>
                 </div>
             </div>
+
+            <picture class="block-meet__asset--2">
+                <source srcset="./assets/12_sales.png" media="(min-width: 768px)" />
+                <img src="./assets/12_sales-mobile.png" alt="" />
+            </picture>
         </div>
     </main>
     <footer class="footer">
