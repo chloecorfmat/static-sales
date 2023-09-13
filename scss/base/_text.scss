@@ -40,6 +40,15 @@ li {
   font-size: 1.2rem;
 }
 
+label {
+  font-family: $lexend;
+  color: $slate;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  display: block;
+}
+
+
 .strong {
   font-family: $lexend;
   font-weight: 700;

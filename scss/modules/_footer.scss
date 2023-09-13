@@ -1,0 +1,55 @@
+.footer {
+  background: $primary;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(xl) {
+    padding: 1rem 15rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 150px;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-up(xl) {
+      margin: initial;
+      padding: initial;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $cream;
+    font-weight: 500;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: $cream wavy underline;
+    }
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      text-decoration: $cream wavy underline;
+      outline: 2px solid $apple;
+      border-radius: $border-radius;
+
+    }
+  }
+}

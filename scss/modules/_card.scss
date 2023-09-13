@@ -1,19 +1,19 @@
 .cards-list {
   display: flex;
   flex-direction: column;
-  gap: 12rem;
+  gap: 10rem;
   list-style-type: none;
-  padding-top: 12rem;
+  padding-top: 10rem;
   padding-left: 0;
 
   @include media-breakpoint-up(sm) {
-    padding-top: 15rem;
-    gap: 15rem;
+    padding-top: 8rem;
+    gap: 8rem;
   }
 
   @include media-breakpoint-up(lg) {
-    padding-top: 20rem;
-    gap: 20rem;
+    padding-top: 10rem;
+    gap: 10rem;
   }
 
   @include media-breakpoint-up(xl) {
@@ -45,34 +45,19 @@
 
   // Image dimensions : 270*200px
   &__image {
-    width: 60%;
+    max-width: 100%;
     position: absolute;
-    bottom: 80%;
+    top: -12rem;
     left: 50%;
     transform: translateX(-50%);
 
-    @include media-breakpoint-up(sm) {
-      width: 55%;
-    }
-
-    @include media-breakpoint-up(md) {
-      width: 45%;
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: 45%;
-    }
-
-    @include media-breakpoint-up(xl) {
-      width: 70%;
+    @include media-breakpoint-up(xxl) {
+      top: -12rem;
     }
 
     @include media-breakpoint-up(xxl) {
       width: 70%;
-      position: absolute;
-      bottom: 80%;
-      left: 50%;
-      transform: translateX(-50%);
+      top: -14rem;
     }
   }
 

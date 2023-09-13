@@ -1,0 +1,96 @@
+.block-meet{
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+
+  @include media-breakpoint-up(xl) {
+    padding: 7rem 15rem 7rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 5rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      flex-direction: row;
+    }
+  }
+
+  &__column {
+    width: 100%;
+
+    @include media-breakpoint-up(xxl) {
+      width: 50%;
+    }
+  }
+
+  &__contact-list {
+    margin-top: 0;
+
+    &-item {
+      list-style-image: url("./assets/bullet_15px.png");
+      list-style-position: outside;
+    }
+
+    &-link {
+      color: $primary;
+
+      &:focus,
+      &:focus-visible {
+        outline: 2px solid $apple;
+        border-radius: $border-radius;
+      }
+    }
+
+    &-info {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+
+  &__contact-title {
+    font-family: $lexend;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.8;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    margin: 1rem 0;
+
+    &-item {
+      list-style-type: none;
+    }
+
+    &-link {
+      color: $cream;
+      width: 3rem;
+      height: 3rem;
+      background: $primary;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      &:active,
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background: $poppy-600;
+        outline: 2px solid $poppy;
+      }
+    }
+  }
+}

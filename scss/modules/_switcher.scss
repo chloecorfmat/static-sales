@@ -21,6 +21,12 @@
     &--active {
       background: $primary;
       color: $snow;
+
+      &:focus,
+      &:focus-visible {
+        outline: 2px solid map-get($primaries, '600');
+        text-decoration: $cream wavy underline !important;
+      }
     }
 
     &:first-child {
@@ -31,6 +37,12 @@
     &:nth-child(2) {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 2px solid map-get($primaries, '600');
+      text-decoration: $primary wavy underline;
     }
   }
 }

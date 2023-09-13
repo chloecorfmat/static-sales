@@ -1,0 +1,66 @@
+.form {
+  margin-top: 3rem;
+
+  .required {
+    color: $danger;
+  }
+
+  &__required-message {
+    text-align: left;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+  }
+
+  &__field {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  &__select,
+  &__input {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    background: $cream;
+    color: $slate;
+    border-radius: $border-radius;
+    line-height: 1.2;
+    font-family: $lexend;
+    border: none;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    margin-top: .25rem;
+    box-sizing: border-box;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: 2px solid $apple;
+    }
+  }
+
+  &__textarea {
+    max-width: $form-input-max-width;
+    width: 100%;
+    display: block;
+    background: $cream;
+    color: $slate;
+    border-radius: $border-radius;
+    line-height: 1.2;
+    font-family: $lexend;
+    border: none;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    margin-top: .25rem;
+    box-sizing: border-box;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: 2px solid $apple;
+    }
+  }
+}
