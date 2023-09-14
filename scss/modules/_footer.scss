@@ -1,15 +1,19 @@
 .footer {
   background: $primary;
-  padding: 1rem;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
 
-  @include media-breakpoint-up(xl) {
-    padding: 1rem 15rem;
-    flex-direction: row;
-    justify-content: space-between;
+
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(xl) {
+      padding: 1rem 15rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__logo {

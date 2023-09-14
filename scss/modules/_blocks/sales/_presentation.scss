@@ -1,5 +1,13 @@
 .block-presentation {
   background: $cream;
+  position: relative;
+  max-width: 2000px;
+  margin: auto;
+  overflow: hidden;
+
+  @media (min-width: 2000px) {
+    border-radius: $border-radius;
+  }
 
   &__row {
     display: flex;
@@ -32,7 +40,9 @@
 
   &__content {
     padding: 0 3rem;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     + .block-presentation__image {
       margin-top: 3rem;
@@ -55,5 +65,17 @@
     .strong {
       font-weight: 700;
     }
+  }
+}
+
+.block-presentation__asset--1 {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  z-index: 1;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
   }
 }

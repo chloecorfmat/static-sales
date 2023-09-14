@@ -20,30 +20,30 @@
 
             <nav class="header-nav" id="js--header-nav">
                 <ul class="header-nav__list">
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Accueil</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Service</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
+                    <li class="header-nav__item"><a href="/" class="header-nav__link">Accueil</a></li>
+                    <li class="header-nav__item"><a href="#offres" class="header-nav__link">Offres</a></li>
+                    <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
                 </ul>
             </nav>
             <ul class="header-social" id="js--header-social">
                 <li class="header-social__item">
                     <a href="" title="Voir mon compte Github - Nouvelle fenêtre" class="header-social__link">
-                        <i class="fa-brands fa-github" title="Voir mon compte Github"></i>
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li class="header-social__item">
                     <a href="" title="Voir mon compte LinkedIn - Nouvelle fenêtre" class="header-social__link">
-                        <i class="fa-brands fa-linkedin-in" title="Voir mon compte LinkedIn"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li class="header-social__item">
-                    <a href="" title="Voir mon compte X (ancien Twitter) - Nouvelle fenêtre" class="header-social__link">
-                        <i class="fa-brands fa-x-twitter" title="Voir mon compte X (ancien Twitter)"></i>
+                    <a href="" title="Voir mon compte X (nouveau Twitter) - Nouvelle fenêtre" class="header-social__link">
+                        <i class="fa-brands fa-x-twitter"></i>
                     </a>
                 </li>
                 <li class="header-social__item">
                     <a href="" title="Voir mon compte Instagram - Nouvelle fenêtre" class="header-social__link">
-                        <i class="fa-brands fa-instagram" title="Voir mon compte Instagram"></i>
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
             </ul>
@@ -51,10 +51,7 @@
     </header>
     <main>
         <div class="block-hero">
-            <picture class="block-hero__asset--1">
-                <source srcset="./assets/01_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/01_sales-mobile.png" alt="" />
-            </picture>
+            <img src="./assets/01_sales.png" alt="" class="block-hero__asset--1" />
 
             <div class="block-hero__content">
                 <img src="./assets/01_photo_blob.png" alt="Portrait de Chloé Corfmat" class="block-hero__image"/>
@@ -64,171 +61,157 @@
                     <p>Je suis Chloé Corfmat, <strong>ingénieure & créative</strong>. J'aide les entreprises et les associations à développer leur activité grâce à un site internet sur-mesure.</p>
                     <div class="btns-container">
                         <a href="#offres" class="btn btn--reverse btn--primary">Découvrez mes offres</a>
-                        <a href="#" class="btn btn--primary">Contactez-moi</a>
+                        <a href="#contact" class="btn btn--primary">Contactez-moi</a>
                     </div>
                 </div>
             </div>
 
             <img src="./assets/02_sales.png" alt="" class="block-hero__asset--2"/>
         </div>
-        <div class="block-why">
-            <!-- @Todo : blobs -->
-            <picture class="block-why__asset--1">
-                <source srcset="./assets/03_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/03_sales-mobile.png" alt="" />
-            </picture>
+        <div class="block">
+            <img src="./assets/03_sales.png" alt="" class="block-why__asset--1" />
 
-            <h2>Pourquoi un <span class="highlighted">site web</span> ?</h2>
-            <ul class="cards-list">
-                <li class="cards-item">
-                    <img src="./assets/illustrations/shine-online-video-conference_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content">
-                        <h3 class="cards-item__title">Pérennisez votre présence en ligne !</h3>
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="cards-item">
-                    <img src="./assets/illustrations/shine-group-of-diverse-people_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content">
-                        <h3 class="cards-item__title">N'excluez personne !</h3>
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="cards-item">
-                    <img src="./assets/illustrations/shine-hands-holding-light-bulb-magnifying-glass-pencil-and-coin_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content">
-                        <h3 class="cards-item__title">Soyez indépendant !</h3>
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <!-- @Todo : blobs -->
-            <picture class="block-why__asset--2">
-                <source srcset="./assets/04_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/04_sales-mobile.png" alt="" />
-            </picture>
-        </div>
-        <div class="block-presentation">
-            <picture class="block-presentation__asset--1">
-                <source srcset="./assets/05_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/01_sales-mobile.png" alt="" />
-            </picture>
-            <h2 class="sr-only">À propos de Chloé Corfmat</h2>
-            <div class="block-presentation__row">
-                <img src="./assets/photos/Chloe-Corfmat-01.jpg" alt=""  class="block-presentation__image"/>
-                <div class="block-presentation__content">
-                    <h3>Je m'appelle Chloé,</h3>
-                    <p>depuis 2O14, je me forme aux métiers du web.</p>
-                    <p>Aujourd’hui, je veux <strong class="strong">rendre le web accessible</strong> pour que chacun puisse accéder aux mêmes contenus et mêmes fonctionnalités quelle que soit sa condition physique, cognitive ou psychique. Je veux <strong class="strong">sensibiliser les acteurs du web</strong> (même les plus petites structures) à l’importance de consacrer un budget pour se former et former ses équipes à l’<strong class="strong">accessibilité web</strong>.</p>
-                </div>
+            <div class="block-why">
+                <h2>Pourquoi un <span class="highlighted">site web</span> ?</h2>
+                <ul class="cards-list">
+                    <li class="cards-item">
+                        <img src="./assets/illustrations/shine-online-video-conference_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content">
+                            <h3 class="cards-item__title">Pérennisez votre présence en ligne !</h3>
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cards-item">
+                        <img src="./assets/illustrations/shine-group-of-diverse-people_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content">
+                            <h3 class="cards-item__title">N'excluez personne !</h3>
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cards-item">
+                        <img src="./assets/illustrations/shine-hands-holding-light-bulb-magnifying-glass-pencil-and-coin_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content">
+                            <h3 class="cards-item__title">Soyez indépendant !</h3>
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="block-presentation__row">
-                <div class="block-presentation__content">
-                    <h3>Mon cursus</h3>
-                    <p>Je suis titulaire d'un <strong class="strong">diplôme d'ingénieure en informatique</strong> et d'un <span>DUT Métiers du Multimédia et de l'Internet</span>.</p>
-                    <h3>Mes précédentes expériences</h3>
-                    <ol>
-                        <li><strong class="strong">Département de la Sarthe</strong></li>
-                        <li><strong class="strong">Capgemini</strong> pour le compte de la SNCF</li>
-                        <li><strong class="strong">Klee Interactive</strong> pour des structures publiques et les sites du Groupe</li>
-                    </ol>
-                    <div class="btns-container btns-container--centered">
-                        <a href="" class="btn btn--primary">Lire mon parcours détaillé</a>
+
+            <img src="./assets/04_sales.png" alt="" class="block-why__asset--2"/>
+        </div>
+        <div class="block">
+            <img src="./assets/05_sales.png" alt="" class="block-presentation__asset--1" />
+
+            <div class="block-presentation">
+                <h2 class="sr-only">À propos de Chloé Corfmat</h2>
+                <div class="block-presentation__row">
+                    <img src="./assets/photos/Chloe-Corfmat-01.jpg" alt=""  class="block-presentation__image"/>
+                    <div class="block-presentation__content">
+                        <h3>Je m'appelle Chloé,</h3>
+                        <p>depuis 2O14, je me forme aux métiers du web.</p>
+                        <p>Aujourd’hui, je veux <strong class="strong">rendre le web accessible</strong> pour que chacun puisse accéder aux mêmes contenus et mêmes fonctionnalités quelle que soit sa condition physique, cognitive ou psychique. Je veux <strong class="strong">sensibiliser les acteurs du web</strong> (même les plus petites structures) à l’importance de consacrer un budget pour se former et former ses équipes à l’<strong class="strong">accessibilité web</strong>.</p>
                     </div>
                 </div>
-                <img src="./assets/photos/Chloe-Corfmat-02.jpg" alt=""  class="block-presentation__image"/>
+                <div class="block-presentation__row">
+                    <div class="block-presentation__content">
+                        <h3>Mon cursus</h3>
+                        <p>Je suis titulaire d'un <strong class="strong">diplôme d'ingénieure en informatique</strong> et d'un <span>DUT Métiers du Multimédia et de l'Internet</span>.</p>
+                        <h3>Mes précédentes expériences</h3>
+                        <ol>
+                            <li><strong class="strong">Département de la Sarthe</strong></li>
+                            <li><strong class="strong">Capgemini</strong> pour le compte de la SNCF</li>
+                            <li><strong class="strong">Klee Interactive</strong> pour des structures publiques et les sites du Groupe</li>
+                        </ol>
+                        <div class="btns-container btns-container--centered">
+                            <a href="" class="btn btn--primary">Lire mon parcours détaillé  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a>
+                        </div>
+                    </div>
+                    <img src="./assets/photos/Chloe-Corfmat-02.jpg" alt=""  class="block-presentation__image"/>
+                </div>
             </div>
-
-            <picture class="block-presentation__asset--2">
-                <source srcset="./assets/06_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/06_sales-mobile.png" alt="" />
-            </picture>
         </div>
-        <div class="block-offers">
-            <picture class="block-offers__asset--1">
-                <source srcset="./assets/07_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/07_sales-mobile.png" alt="" />
-            </picture>
+        <div class="block">
+            <img src="./assets/07_sales.png" alt="" class="block-offers__asset--1" />
 
-            <h2>Je vous <span class="highlighted">accompagne</span></h2>
-            <p class="block-offers__infos">Ensemble, nous construisons votre site 100% adapté à vos besoins, accessibles aux personnes handicapées, tout en respectant les standards d’assurance qualité web et les lois en matière de protection des données.</p>
-            <div class="switcher">
-                <button class="switcher__item switcher__item--active" data-foldable="true">Je ne maîtrise pas trop</button>
-                <button class="switcher__item" data-foldable="false">Je veux des détails</button>
+            <div class="block-offers" id="offres">
+                <h2>Je vous <span class="highlighted">accompagne</span></h2>
+                <p class="block-offers__infos">Ensemble, nous construisons votre site 100% adapté à vos besoins, accessibles aux personnes handicapées, tout en respectant les standards d’assurance qualité web et les lois en matière de protection des données.</p>
+                <div class="switcher">
+                    <button class="switcher__item switcher__item--active" data-foldable="true">Je ne maîtrise pas trop</button>
+                    <button class="switcher__item" data-foldable="false">Je veux des détails</button>
+                </div>
+                <ul class="cards-list" id="cards-list--offers">
+                    <li class="cards-item cards-item--foldable">
+                        <img src="./assets/illustrations/shine-girl-studying-online_270x270-modified.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content cards-item__content--fold">
+                            <h3 class="cards-item__title">Site web personnalisé</h3>
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                        <div class="cards-item__content cards-item__content--unfold" aria-hidden="true">
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cards-item cards-item--foldable">
+                        <img src="./assets/illustrations/shine-diverse-people-of-different-ages_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content cards-item__content--fold">
+                            <h3 class="cards-item__title">Accessibilité numérique</h3>
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                        <div class="cards-item__content cards-item__content--unfold" aria-hidden="true">
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cards-item cards-item--foldable">
+                        <img src="./assets/illustrations/shine-young-woman-pointing-to-a-question_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content cards-item__content--fold">
+                            <h3 class="cards-item__title">Maintenance de site</h3>
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                        <div class="cards-item__content cards-item__content--unfold" aria-hidden="true">
+                            <ul class="cards-item__list">
+                                <li>Blabla 1</li>
+                                <li>Blabla 2</li>
+                                <li>Blabla 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="cards-list" id="cards-list--offers">
-                <li class="cards-item cards-item--foldable">
-                    <img src="./assets/illustrations/shine-girl-studying-online_270x270-modified.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content cards-item__content--fold">
-                        <h3 class="cards-item__title">Site web personnalisé</h3>
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                    <div class="cards-item__content cards-item__content--unfold" aria-hidden="true">
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="cards-item cards-item--foldable">
-                    <img src="./assets/illustrations/shine-diverse-people-of-different-ages_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content cards-item__content--fold">
-                        <h3 class="cards-item__title">Accessibilité numérique</h3>
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                    <div class="cards-item__content cards-item__content--unfold" aria-hidden="true">
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="cards-item cards-item--foldable">
-                    <img src="./assets/illustrations/shine-young-woman-pointing-to-a-question_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content cards-item__content--fold">
-                        <h3 class="cards-item__title">Maintenance de site</h3>
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                    <div class="cards-item__content cards-item__content--unfold" aria-hidden="true">
-                        <ul class="cards-item__list">
-                            <li>Blabla 1</li>
-                            <li>Blabla 2</li>
-                            <li>Blabla 3</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
 
-            <picture class="block-offers__asset--2">
-                <source srcset="./assets/08_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/08_sales-mobile.png" alt="" />
-            </picture>
+            <img src="./assets/08_sales-mobile.png" alt="" class="block-offers__asset--2" />
         </div>
         <div class="block-chat-on">
             <div class="block-chat-on__container">
@@ -238,7 +221,7 @@
                         <p>Contactez-moi pour que l’on <strong class="strong">planifie ensemble un premier rendez-vous gratuit</strong> pour échanger sur votre projet.</p>
                         <p>Ce sera l’occasion pour moi de vous présenter ce que je peux vous apporter et ma façon de travailler.</p>
                         <div class="btns-container btns-container--centered">
-                            <a href="" class="btn btn--primary">Contactez-moi !</a>
+                            <a href="#contact" class="btn btn--primary">Contactez-moi !</a>
                         </div>
                     </div>
                     <div  class="block-chat-on__images">
@@ -248,50 +231,46 @@
             </div>
 
         </div>
-        <div class="block-steps">
-            <picture class="block-steps__asset--1">
-                <source srcset="./assets/09_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/09_sales-mobile.png" alt="" />
-            </picture>
+        <div class="block">
+            <img src="./assets/09_sales.png" alt="" class="block-steps__asset--1" />
 
-            <h2>Travaillons <span class="highlighted">ensemble</span> !</h2>
-            <ul class="cards-list">
-                <li class="cards-item">
-                    <img src="./assets/illustrations/shine-hr-manager-is-searching-for-a-resume-of-employee_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content">
-                        <h3 class="cards-item__title">J'analyse vos besoins</h3>
-                        <p>Je commence toujours par <strong class="strong">échanger avec vous</strong> pour <strong class="strong">comprendre vos besoins</strong>.</p>
-                    </div>
-                </li>
-                <li class="cards-item">
-                    <img src="./assets/illustrations/shine-calculator-money-and-calendar-for-accounting_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content">
-                        <h3 class="cards-item__title">J'établis un devis</h3>
-                        <p>En fonction de vos réponses à mes questions, j’étudie votre projet et je vous propose une <strong class="strong">solution humaine ou technique</strong> adaptée accompagnée du devis.</p>
-                    </div>
-                </li>
-                <li class="cards-item">
-                    <img src="./assets/illustrations/shine-support-operator-helps-to-solve-the-problem_270x270.png" alt="" class="cards-item__image"/>
-                    <div class="cards-item__content">
-                        <h3 class="cards-item__title">Je reste disponible</h3>
-                        <p>Une fois le devis signé, je commence les développements. Je reste <strong class="strong">disponible pour répondre à vos questions</strong> durant toute la prestation et après.</p>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="block-steps__infos">
-                <p class="strong">En travaillant avec moi, vous aurez accès à :</p>
-                <ul>
-                    <li>un espace privé et personnalisé pour suivre l’avancement du projet</li>
-                    <li>un espace de discussion privé pour échanger tout au long du projet</li>
-                    <li>une réponse garantie par mail sous 72h ouvrées maximum (hors vacances)</li>
+            <div class="block-steps">
+                <h2>Travaillons <span class="highlighted">ensemble</span> !</h2>
+                <ul class="cards-list">
+                    <li class="cards-item">
+                        <img src="./assets/illustrations/shine-hr-manager-is-searching-for-a-resume-of-employee_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content">
+                            <h3 class="cards-item__title">J'analyse vos besoins</h3>
+                            <p>Je commence toujours par <strong class="strong">échanger avec vous</strong> pour <strong class="strong">comprendre vos besoins</strong>.</p>
+                        </div>
+                    </li>
+                    <li class="cards-item">
+                        <img src="./assets/illustrations/shine-calculator-money-and-calendar-for-accounting_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content">
+                            <h3 class="cards-item__title">J'établis un devis</h3>
+                            <p>En fonction de vos réponses à mes questions, j’étudie votre projet et je vous propose une <strong class="strong">solution humaine ou technique</strong> adaptée accompagnée du devis.</p>
+                        </div>
+                    </li>
+                    <li class="cards-item">
+                        <img src="./assets/illustrations/shine-support-operator-helps-to-solve-the-problem_270x270.png" alt="" class="cards-item__image"/>
+                        <div class="cards-item__content">
+                            <h3 class="cards-item__title">Je reste disponible</h3>
+                            <p>Une fois le devis signé, je commence les développements. Je reste <strong class="strong">disponible pour répondre à vos questions</strong> durant toute la prestation et après.</p>
+                        </div>
+                    </li>
                 </ul>
+
+                <div class="block-steps__infos">
+                    <p class="strong">En travaillant avec moi, vous aurez accès à :</p>
+                    <ul>
+                        <li>un espace privé et personnalisé pour suivre l’avancement du projet</li>
+                        <li>un espace de discussion privé pour échanger tout au long du projet</li>
+                        <li>une réponse garantie par mail sous 72h ouvrées maximum (hors vacances)</li>
+                    </ul>
+                </div>
             </div>
 
-            <picture class="block-steps__asset--2">
-                <source srcset="./assets/10_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/10_sales-mobile.png" alt="" />
-            </picture>
+            <img src="./assets/10_sales.png" alt="" class="block-steps__asset--2" />
         </div>
         <div class="block-testimonials">
             <div class="block-testimonials__container">
@@ -312,105 +291,100 @@
                 </div>
             </div>
         </div>
-        <div class="block-meet">
-            <picture class="block-meet__asset--1">
-                <source srcset="./assets/11_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/11_sales-mobile.png" alt="" />
-            </picture>
+        <div class="block">
+            <img src="./assets/11_sales.png" alt=""  class="block-meet__asset--1" />
 
-            <h2>Rencontrons-<span class="highlighted">nous</span> !</h2>
-            <div class="block-meet__content">
-                <div class="block-meet__column">
-                    <p>Grâce au formulaire de contact, je reçois vos messages directement. Je vous réponds dans un délai de 72h maximum.</p>
+            <div class="block-meet" id="contact">
+                <h2>Rencontrons-<span class="highlighted">nous</span> !</h2>
+                <div class="block-meet__content">
+                    <div class="block-meet__column">
+                        <p>Grâce au formulaire de contact, je reçois vos messages directement. Je vous réponds dans un délai de 72h maximum.</p>
 
-                    <form class="form">
-                        <p class="form__required-message">Les champs précédés d’une astérisque rouge (<span class="required">*</span>) sont obligatoires.</p>
+                        <form class="form">
+                            <p class="form__required-message">Les champs précédés d’une astérisque rouge (<span class="required">*</span>) sont obligatoires.</p>
 
-                        <div class="form__field">
-                            <label for="name">Votre nom <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required class="form__input"/>
-                        </div>
-                        <div class="form__field">
-                            <label for="email">Votre adresse e-mail <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" required class="form__input"/>
-                        </div>
-                        <div class="form__field">
-                            <label for="object">Votre objet <span class="required">*</span></label>
-                            <select name="object" id="object" required class="form__select">
-                                <option value="">--Choisir une option--</option>
-                                <option value="meet">Demander un rendez-vous pour un appel découverte</option>
-                                <option value="ask">Me poser une question</option>
-                                <option value="react">Réagir à une publication sur Internet</option>
-                            </select>
-                        </div>
-                        <div class="form__field">
-                            <label for="message">Votre message <span class="required">*</span></label>
-                            <textarea name="message" id="message" cols="30" rows="10" required class="form__textarea"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--submit btn--primary">Envoyer votre message</button>
-                    </form>
-                </div>
-                <div class="block-meet__column">
-                    <h3 class="block-meet__contact-title">Vous pouvez aussi me contacter par : </h3>
-                    <ul class="block-meet__contact-list">
-                        <li class="block-meet__contact-list-item">
-                            <strong>E-mail : </strong>
-                            <a href="mailto:contact@chloecorfmat.fr" class="block-meet__contact-list-link">contact@chloecorfmat.fr</a>
-                        </li>
-                        <li class="block-meet__contact-list-item">
-                            <strong>Téléphone : </strong>
-                            <a href="tel:+33750346070" class="block-meet__contact-list-link">+33 7 50 34 60 70</a>
-                            <p class="block-meet__contact-list-info">(si je ne réponds pas, laissez-moi un message avec vos coordonnées)</p>
-                        </li>
-                    </ul>
+                            <div class="form__field">
+                                <label for="name">Votre nom <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required class="form__input"/>
+                            </div>
+                            <div class="form__field">
+                                <label for="email">Votre adresse e-mail <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required class="form__input"/>
+                            </div>
+                            <div class="form__field">
+                                <label for="object">Votre objet <span class="required">*</span></label>
+                                <select name="object" id="object" required class="form__select">
+                                    <option value="">--Choisir une option--</option>
+                                    <option value="meet">Demander un rendez-vous pour un appel découverte</option>
+                                    <option value="ask">Me poser une question</option>
+                                    <option value="react">Réagir à une publication sur Internet</option>
+                                </select>
+                            </div>
+                            <div class="form__field">
+                                <label for="message">Votre message <span class="required">*</span></label>
+                                <textarea name="message" id="message" cols="30" rows="10" required class="form__textarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--submit btn--primary">Envoyer votre message</button>
+                        </form>
+                    </div>
+                    <div class="block-meet__column">
+                        <h3 class="block-meet__contact-title">Vous pouvez aussi me contacter par : </h3>
+                        <ul class="block-meet__contact-list">
+                            <li class="block-meet__contact-list-item">
+                                <strong>E-mail : </strong>
+                                <a href="mailto:contact@chloecorfmat.fr" class="block-meet__contact-list-link">contact@chloecorfmat.fr</a>
+                            </li>
+                            <li class="block-meet__contact-list-item">
+                                <strong>Téléphone : </strong>
+                                <a href="tel:+33750346070" class="block-meet__contact-list-link">+33 7 50 34 60 70</a>
+                                <p class="block-meet__contact-list-info">(si je ne réponds pas, laissez-moi un message avec vos coordonnées)</p>
+                            </li>
+                        </ul>
 
-                    <h3 class="block-meet__contact-title">Je suis aussi présente sur les réseaux sociaux</h3>
-                    <ul class="block-meet__social-list">
-                        <li class="block-meet__social-list-item">
-                            <a href="#" target="_blank" title="Github - Nouvelle fenêtre" class="block-meet__social-list-link">
-                                <i class="fa-brands fa-github fa-xl"></i>
-                            </a>
-                        </li>
-                        <li class="block-meet__social-list-item">
-                            <a href="#" target="_blank" title="LinkedIn - Nouvelle fenêtre" class="block-meet__social-list-link">
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                            </a>
-                        </li>
-                        <li class="block-meet__social-list-item">
-                            <a href="#" target="_blank" title="X (nouveau Twitter) - Nouvelle fenêtre" class="block-meet__social-list-link">
-                                <i class="fa-brands fa-x-twitter fa-xl"></i>
-                            </a>
-                        </li>
-                        <li class="block-meet__social-list-item">
-                            <a href="#" target="_blank" title="Instagram - Nouvelle fenêtre" class="block-meet__social-list-link">
-                                <i class="fa-brands fa-instagram fa-xl"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        <h3 class="block-meet__contact-title">Je suis aussi présente sur les réseaux sociaux</h3>
+                        <ul class="block-meet__social-list">
+                            <li class="block-meet__social-list-item">
+                                <a href="#" target="_blank" title="Github - Nouvelle fenêtre" class="block-meet__social-list-link">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                </a>
+                            </li>
+                            <li class="block-meet__social-list-item">
+                                <a href="#" target="_blank" title="LinkedIn - Nouvelle fenêtre" class="block-meet__social-list-link">
+                                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                                </a>
+                            </li>
+                            <li class="block-meet__social-list-item">
+                                <a href="#" target="_blank" title="X (nouveau Twitter) - Nouvelle fenêtre" class="block-meet__social-list-link">
+                                    <i class="fa-brands fa-x-twitter fa-xl"></i>
+                                </a>
+                            </li>
+                            <li class="block-meet__social-list-item">
+                                <a href="#" target="_blank" title="Instagram - Nouvelle fenêtre" class="block-meet__social-list-link">
+                                    <i class="fa-brands fa-instagram fa-xl"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <picture class="block-meet__asset--2">
-                <source srcset="./assets/12_sales.png" media="(min-width: 768px)" />
-                <img src="./assets/12_sales-mobile.png" alt="" />
-            </picture>
+            <img src="./assets/12_sales.png" alt=""  class="block-meet__asset--2" />
         </div>
     </main>
     <footer class="footer">
-        <img src="./assets/logo_cream.png" alt="Logo de Chloé Corfmat" class="footer__logo"/>
-        <ul class="footer__list">
-            <li><a href="#" class="footer__link">Mentions légales</a></li>
-            <li><a href="#" class="footer__link">CGV</a></li>
-            <li><a href="#" class="footer__link">Accessibilité</a></li>
-        </ul>
+        <div class="footer__container">
+            <img src="./assets/logo_cream.png" alt="Logo de Chloé Corfmat" class="footer__logo"/>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Mentions légales  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="#" class="footer__link">CGV  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="#" class="footer__link">Accessibilité  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+            </ul>
 
-        <ul class="footer__list">
-            <li><a href="#" target="_blank" class="footer__link">Atelier Krouiñ</a></li>
-            <li><a href="#" target="_blank" class="footer__link">Mon parcours</a></li>
-        </ul>
-    </footer>
-    <footer>
-
+            <ul class="footer__list">
+                <li><a href="#" target="_blank" class="footer__link">Atelier Krouiñ <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="#" target="_blank" class="footer__link">Mon parcours <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
     </footer>
     <script type="module" src="/main.js"></script>
   </body>

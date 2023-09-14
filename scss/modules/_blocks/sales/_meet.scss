@@ -2,6 +2,7 @@
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: auto;
+  position: relative;
 
   @include media-breakpoint-up(xl) {
     padding: 7rem 15rem 7rem;
@@ -92,5 +93,29 @@
         outline: 2px solid $poppy;
       }
     }
+  }
+}
+
+.block-meet__asset--1 {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 1;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+  }
+}
+
+.block-meet__asset--2 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
   }
 }
