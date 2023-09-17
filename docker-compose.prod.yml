@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  web:
+    restart: always
+    image: httpd:2.4
+    volumes:
+      - ./app:/usr/local/apache2/htdocs/
+    ports:
+      - 8094:8043
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sales.rule=Host(`chloecorfmat.fr`, `www.chloecorfmat.fr`)"
+      - "traefik.http.routers.sales.entrypoints=websecure"
+      - "traefik.http.routers.sales.middlewares=strip-www"
+networks:
+  web:
+    external: true
