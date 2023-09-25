@@ -1,0 +1,13 @@
+.wysiwyg {
+  ol,
+  ul {
+    margin-top: 1rem;
+    text-align: left;
+    list-style-image: url("./assets/bullet_15px.png");
+    list-style-position: outside;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
