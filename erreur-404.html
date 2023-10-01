@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erreur 404 | Chloé Corfmat</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header-banner">
+            <a href="/" class="header-banner__home">
+                <img src="./assets/logo_text-38pt.png" alt="Chloé Corfmat" />
+            </a>
+
+            <button class="header-banner__burger" id="js--header-burger__button">
+                <i class="fa-solid fa-bars fa-2xl header-banner__burger--open-selected" id="js--header-burger__button--open" title="Ouvrir le menu"></i>
+                <i class="fa-solid fa-xmark fa-2xl header-banner__burger--close" id="js--header-burger__button--close" title="Fermer le menu"></i>
+            </button>
+
+            <nav class="header-nav" id="js--header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="/" class="header-nav__link">Accueil</a></li>
+                    <li class="header-nav__item"><a href="#offres" class="header-nav__link">Offres</a></li>
+                    <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <ul class="header-social" id="js--header-social">
+                <li class="header-social__item">
+                    <a href="https://www.instagram.com/chloecorfmat/" title="Voir mon compte Instagram - Nouvelle fenêtre" class="header-social__link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="header-social__item">
+                    <a href="https://www.linkedin.com/in/chloecorfmat/" title="Voir mon compte LinkedIn - Nouvelle fenêtre" class="header-social__link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="header-social__item">
+                    <a href="https://twitter.com/chloecorfmat" title="Voir mon compte X (nouveau Twitter) - Nouvelle fenêtre" class="header-social__link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="header-social__item">
+                    <a href="https://github.com/chloecorfmat" title="Voir mon compte Github - Nouvelle fenêtre" class="header-social__link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="error">
+        <div class="error__content">
+            <h1 class="error__title">La page que vous cherchez <span class="highlighted">n'existe pas</span></h1>
+            <p class="error__subtitle">Erreur technique 404</p>
+
+            <div class="error__navigation">
+                <p>Pour poursuivre votre navigation, vous pouvez retourner sur l'accueil.</p>
+                <a href="/" target="_self" class="btn btn--primary">Retourner à l'accueil <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </main>
+    <img src="assets/illustrations/error404-footer.png" alt="" class="error__image" />
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./assets/logo_cream.png" alt="Logo de Chloé Corfmat" class="footer__logo"/>
+            <ul class="footer__list">
+                <li><a href="./mentions-legales.html" class="footer__link">Mentions légales  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="#" class="footer__link">CGV  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="#" class="footer__link">Accessibilité  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" target="_blank" class="footer__link">Atelier Krouiñ <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="#" target="_blank" class="footer__link">Mon parcours <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

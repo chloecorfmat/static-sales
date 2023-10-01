@@ -1,0 +1,38 @@
+.error {
+  padding: 2rem 1rem;
+  background-color: $snow;
+  position: relative;
+
+
+  @include media-breakpoint-up(xl) {
+    padding: 7rem 15rem 3rem;
+  }
+
+  &__content {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 2.5rem !important;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: $corfmat;
+    color: $slate;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  &__navigation {
+    margin: 3rem auto 0;
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    background-color: $snow;
+  }
+}

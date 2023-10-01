@@ -89,7 +89,6 @@
   .cards-item {
     &__content {
       &--fold {
-        height: 100%;
         background: $cream;
       }
 
@@ -106,11 +105,18 @@
 }
 
 .cards-item__content--unfold {
+
   &[aria-hidden=true] {
     display: none;
   }
 
   &[aria-hidden=false] {
     display: block;
+    height: 100%;
+    padding-top: .25rem;
   }
+}
+
+.cards-item {
+  background-color: $cream;
 }

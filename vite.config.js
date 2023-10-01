@@ -6,6 +6,7 @@ export default defineConfig({
     },
     build: {
         "assetsDir": "user/themes/custom/assets",
+        "assetsInlineLimit": "0",
         "rollupOptions": {
             "output": {
                 "entryFileNames": "user/themes/custom/assets/[name].js",

@@ -82,7 +82,8 @@
   $color: map-get($colors, '500');
 
   // Choose between light or dark colors according to background color.
-  background-color: color-contrast($color);
+  //background-color: color-contrast($color);
+  background-color: $snow;
   color: $color;
   border: 2px solid $color;
   transition: .3s ease all;

@@ -3,11 +3,21 @@
   ul {
     margin-top: 1rem;
     text-align: left;
-    list-style-image: url("./assets/bullet_15px.png");
+    list-style-image: url("/assets/bullet_15px.png");
     list-style-position: outside;
   }
 
   strong {
     font-weight: 700;
+  }
+
+  a {
+    color: $poppy;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline wavy;
+      color: $poppy-600;
+    }
   }
 }
