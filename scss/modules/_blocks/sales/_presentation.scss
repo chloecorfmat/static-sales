@@ -14,7 +14,7 @@
     flex-direction: column;
     width: 100%;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xxl) {
       flex-direction: row;
     }
   }
@@ -28,7 +28,7 @@
       margin-bottom: 2rem;
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xxl) {
       width: 50%;
       margin: initial;
 
@@ -52,7 +52,7 @@
       margin-top: 2rem;
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xxl) {
       margin-top: 0;
       padding: 5rem 3rem;
       width: 50%;

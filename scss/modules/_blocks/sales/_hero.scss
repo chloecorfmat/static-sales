@@ -24,12 +24,12 @@
 }
 
 .block-hero__title {
-  width: 75%;
+  width: 100%;
   text-align: center;
   margin: 0 auto 2rem;
 
   @include media-breakpoint-up(xl) {
-    max-width: 75%;
+    max-width: 100%;
     text-align: left;
     margin: 0 0 2rem;
   }
