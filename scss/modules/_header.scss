@@ -88,6 +88,7 @@
     &:hover {
       color: $cream;
       text-decoration: $cream wavy underline;
+      text-underline-offset: $text-underline-offset;
       outline: none;
       background: $primary;
       cursor: pointer;
@@ -100,6 +101,7 @@
       &:hover {
         color: $poppy;
         text-decoration: $poppy wavy underline;
+        text-underline-offset: $text-underline-offset;
         outline: none;
         background: none;
       }

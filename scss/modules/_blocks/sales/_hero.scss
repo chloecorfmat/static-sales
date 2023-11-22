@@ -5,7 +5,7 @@
   padding: 1rem 1rem 5rem;
 
   @include media-breakpoint-up(xl) {
-    padding: 0 15rem 10rem;
+    padding: 5rem 15rem 15rem;
   }
 }
 
@@ -32,6 +32,8 @@
     max-width: 100%;
     text-align: left;
     margin: 0 0 2rem;
+    font-size: 3rem;
+    line-height: 1.1;
   }
 }
 

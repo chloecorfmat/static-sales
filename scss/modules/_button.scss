@@ -12,6 +12,7 @@
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
+  text-wrap: balance;
 
   @include media-breakpoint-up(xxl) {
     width: initial;
@@ -65,14 +66,16 @@
     background-color: map-get($colors, '600');
     // Choose between light or dark colors according to background color.
     color: color-contrast(map-get($colors, '600'));
-    text-decoration: color-contrast(map-get($colors, '600')) wavy underline;
+    //text-decoration: color-contrast(map-get($colors, '600')) wavy underline;
+    //text-underline-offset: $text-underline-offset;
     border: 2px solid map-get($colors, '600');
   }
 
   &:active,
   &:focus,
   &:focus-visible {
-    text-decoration: color-contrast(map-get($colors, '500')) wavy underline;
+    //text-decoration: color-contrast(map-get($colors, '500')) wavy underline;
+    //text-underline-offset: $text-underline-offset;
     outline: 2px solid map-get($colors, '500');
 
   }
@@ -93,13 +96,15 @@
     background-color: map-get($colors, '500');
     // Choose between light or dark colors according to background color.
     color: color-contrast(map-get($colors, '500'));
-    text-decoration: color-contrast(map-get($colors, '500')) wavy underline;
+    //text-decoration: color-contrast(map-get($colors, '500')) wavy underline;
+    //text-underline-offset: $text-underline-offset;
   }
 
   &:active,
   &:focus,
   &:focus-visible {
-    text-decoration: map-get($colors, '500') wavy underline;
+    //text-decoration: map-get($colors, '500') wavy underline;
+    //text-underline-offset: $text-underline-offset;
     outline: 2px solid map-get($colors, '600')
   }
 }

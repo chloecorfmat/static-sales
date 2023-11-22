@@ -23,7 +23,6 @@
 
     @include media-breakpoint-up(xl) {
       margin: initial;
-      padding: initial;
     }
   }
 
@@ -45,12 +44,14 @@
 
     &:hover {
       text-decoration: $cream wavy underline;
+      text-underline-offset: $text-underline-offset;
     }
 
     &:active,
     &:focus,
     &:focus-visible {
       text-decoration: $cream wavy underline;
+      text-underline-offset: $text-underline-offset;
       outline: 2px solid $apple;
       border-radius: $border-radius;
 

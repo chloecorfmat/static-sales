@@ -4,7 +4,7 @@
 
   &__container {
     padding: 3rem 1rem 0;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
 
     @include media-breakpoint-up(xl) {
@@ -20,18 +20,13 @@
     position: relative;
 
     @include media-breakpoint-up(xl) {
-      flex-direction: row;
+      flex-direction: column;
       gap: 5rem;
     }
   }
 
   &__text {
     width: 100%;
-
-    @include media-breakpoint-up(xl) {
-      width: 50%;
-      margin-bottom: 7rem;
-    }
   }
 
   &__images {
@@ -43,13 +38,5 @@
     &-item {
       max-width: 100%;
     }
-
-    @include media-breakpoint-up(xl) {
-      width: 60%;
-      position: absolute;
-      bottom: 0;
-      right: -15%;
-    }
   }
-
 }
