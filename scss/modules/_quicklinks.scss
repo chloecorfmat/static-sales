@@ -1,0 +1,21 @@
+.quicklinks {
+  width: 100%;
+  background: $snow;
+  padding: 1rem;
+
+  &__item {
+    box-sizing: border-box;
+    font-family: $lexend;
+    color: $poppy;
+    text-decoration: none;
+    padding: .5rem;
+    transition: .3s ease all;
+    cursor: pointer;
+    outline-color: $poppy;
+
+    &:hover {
+      background: $poppy;
+      color: $snow;
+    }
+  }
+}
