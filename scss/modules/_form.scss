@@ -40,6 +40,11 @@
     &:focus-visible {
       outline: 2px solid $apple;
     }
+
+    &-description {
+      font-size: 1rem;
+      margin: .25rem 0 0;
+    }
   }
 
   &__textarea {
