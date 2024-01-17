@@ -5,7 +5,7 @@ export default defineConfig({
         host: '0.0.0.0',
     },
     /** For Grav CMS **/
-    build: {
+    /**build: {
         "assetsDir": "user/themes/custom/assets",
         "assetsInlineLimit": "0",
         "rollupOptions": {
@@ -14,10 +14,10 @@ export default defineConfig({
                 "assetFileNames": "user/themes/custom/assets/[name][extname]",
             },
         }
-    }
+    }**/
 
     /** For WordPress **/
-    /**build: {
+    build: {
         "assetsDir": "wp-content/themes/chloecorfmat/assets",
         "assetsInlineLimit": "0",
         "rollupOptions": {
@@ -27,7 +27,7 @@ export default defineConfig({
             },
         },
         minify: false
-    }**/
+    }
     
 })
 

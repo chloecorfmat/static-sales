@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article | Chloé Corfmat</title>
+</head>
+<body>
+<div class="quicklinks visually-hidden-focusable">
+    <a href="#main" class="quicklinks__item">Accéder au contenu principal</a>
+</div>
+<header role="banner" class="header">
+    <div class="header-banner">
+        <a href="/" class="header-banner__home">
+            <img src="./assets/logo_text-38pt.png" alt="Chloé Corfmat" />
+        </a>
+
+        <button class="header-banner__burger" id="js--header-burger__button">
+            <i class="fa-solid fa-bars fa-2xl header-banner__burger--open-selected" id="js--header-burger__button--open" title="Ouvrir le menu"></i>
+            <i class="fa-solid fa-xmark fa-2xl header-banner__burger--close" id="js--header-burger__button--close" title="Fermer le menu"></i>
+        </button>
+
+        <nav role="navigation" class="header-nav" id="js--header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item"><a href="/" class="header-nav__link">Accueil</a></li>
+                <li class="header-nav__item"><a href="#offres" class="header-nav__link">Offres</a></li>
+                <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="header-social" id="js--header-social">
+            <li class="header-social__item">
+                <a href="https://www.instagram.com/chloecorfmat/" title="Voir mon compte Instagram - Nouvelle fenêtre" class="header-social__link">
+                    <span class="visually-hidden">Voir mon compte Instagram</span>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="header-social__item">
+                <a href="https://www.linkedin.com/in/chloecorfmat/" title="Voir mon compte LinkedIn - Nouvelle fenêtre" class="header-social__link">
+                    <span class="visually-hidden">Voir mon compte LinkedIn</span>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="header-social__item">
+                <a href="https://twitter.com/chloecorfmat" title="Voir mon compte X (nouveau Twitter) - Nouvelle fenêtre" class="header-social__link">
+                    <span class="visually-hidden">Voir mon compte Twitter</span>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li class="header-social__item">
+                <a href="https://github.com/chloecorfmat" title="Voir mon compte Github - Nouvelle fenêtre" class="header-social__link">
+                    <span class="visually-hidden">Voir mon compte Instagram</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main role="main" id="main" tabindex="0">
+    <div class="list-articles">
+        <div class="list-articles__banner"></div>
+        <div class="list-articles__content">
+            <header>
+                <!--<nav aria-label="Fil d'ariane" class="breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-list__item">
+                            <a href="#" class="breadcrumb-list__link">Développeuse web</a>
+                        </li>
+                        <li class="breadcrumb-list__item">
+                            <a href="#" class="breadcrumb-list__link" lang="en"><abbr>CEO</abbr> (Chief Executive Officer)</a>
+                        </li>
+                        <li class="breadcrumb-list__item" aria-current="page">
+                            Bureau de développeur : Tests + mon setup idéal
+                        </li>
+                    </ol>
+                </nav>-->
+
+                <h1 class="list-articles__title">Le blog de l'accessibilité numérique</h1>
+                <p class="list-articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </header>
+
+            <div class="list-articles__body">
+                <div class="list-articles__before">
+                    <div class="portrait">
+                        <img src="./assets/01_photo_blob.png" alt="" class="portrait__picture" />
+                        <h2 class="portrait__title">Chloé Corfmat</h2>
+                        <p class="portrait__text"><strong>Ingénieure & créative</strong>, j'aide les entreprises et les associations à développer leur activité grâce à un site internet sur-mesure.</p>
+                        <a href="/" class="btn btn--primary portrait__btn">Découvrir mes services</a>
+                    </div>
+                </div>
+                <div class="list-articles__list">
+                    <article class="list-articles__item" data-expand-target>
+                        <img src="./assets/unsplash/2a1e61d4-2003-3f61-8295-63246ef68c16-768x512.jpg" alt="" class="list-articles__item-image"/>
+                        <span class="tag">Freelance</span>
+                        <h2 class="list-articles__item-title">Enter the world of fashion trends</h2>
+                        <p class="list-articles__item-date">
+                            <time datetime="2023-06-30T16:08:39.929">30 juin 2023 à 16h08</time>
+                        </p>
+                        <p class="list-articles__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="list-articles__item-link" data-expand-link>Lire l'article <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="list-articles__item" data-expand-target>
+                        <img src="./assets/unsplash/2eaa64a3-580b-3243-a87f-a853a88e0f1b-768x512.jpg" alt="" class="list-articles__item-image"/>
+                        <span class="tag">Freelance</span>
+                        <h2 class="list-articles__item-title">Enter the world of fashion trends</h2>
+                        <p class="list-articles__item-date">
+                            <time datetime="2023-06-30T16:08:39.929">30 juin 2023 à 16h08</time>
+                        </p>
+                        <p class="list-articles__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="list-articles__item-link" data-expand-link>Lire l'article <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="list-articles__item" data-expand-target>
+                        <img src="./assets/unsplash/4ca39e97-200f-3044-9d0a-385a603d2dfc-768x512.jpg" alt="" class="list-articles__item-image"/>
+                        <span class="tag">Freelance</span>
+                        <h2 class="list-articles__item-title">Enter the world of fashion trends</h2>
+                        <p class="list-articles__item-date">
+                            <time datetime="2023-06-30T16:08:39.929">30 juin 2023 à 16h08</time>
+                        </p>
+                        <p class="list-articles__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="list-articles__item-link" data-expand-link>Lire l'article <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="list-articles__item" data-expand-target>
+                        <img src="./assets/unsplash/4bb1b81b-de2a-3410-99b5-2567dbadadc8-768x512.jpg" alt="" class="list-articles__item-image"/>
+                        <span class="tag">Freelance</span>
+                        <h2 class="list-articles__item-title">Enter the world of fashion trends</h2>
+                        <p class="list-articles__item-date">
+                            <time datetime="2023-06-30T16:08:39.929">30 juin 2023 à 16h08</time>
+                        </p>
+                        <p class="list-articles__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="list-articles__item-link" data-expand-link>Lire l'article <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="list-articles__item" data-expand-target>
+                        <img src="./assets/unsplash/6f1e804c-0166-35cb-a78e-836de842ea0a-768x512.jpg" alt="" class="list-articles__item-image"/>
+                        <span class="tag">Freelance</span>
+                        <h2 class="list-articles__item-title">Enter the world of fashion trends</h2>
+                        <p class="list-articles__item-date">
+                            <time datetime="2023-06-30T16:08:39.929">30 juin 2023 à 16h08</time>
+                        </p>
+                        <p class="list-articles__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="list-articles__item-link" data-expand-link>Lire l'article <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <div class="btns-container pagination--end">
+                        <button class="btn btn--primary pagination__btn pagination__btn--next">Page suivante <i class="fa-icon fa-solid fa-arrow-right" aria-hidden="true"></i> </button>
+                    </div>
+                </div>
+                <div class="list-articles__after">
+
+                </div>
+            </div>
+            <img src="./assets/02_sales.png" alt="" class="article--full__asset--1"/>
+        </div>
+    </div>
+    <div class="block-sales__container">
+        <div class="block-sales" id="block-sales">
+            <p class="block__subtitle">Ingénieure web créative & engagée, nous pouvons travailler ensemble</p>
+            <h2>Un projet ? <span class="highlighted">Contactez-moi !</span></h2>
+            <p>Vous voulez <strong class="strong">développer votre présence en ligne</strong> grâce à un <strong class="strong">site web personnalisé</strong> sur lequel vous pouvez publier du contenu ? Vous souhaitez créer du contenu en respectant les <strong class="strong">bonnes pratiques d’accessibilité</strong> ou de <strong class="strong">référencement</strong> pour être visible par tous ? Contactez-moi et <strong class="strong">construisons ensemble votre projet</strong> !</p>
+            <div class="btns-container--centered">
+                <a href="#" class="btn btn--primary">
+                    <span class="fa-icon fa-lg fa-solid fa-envelope" aria-hidden="true"></span>
+                    M’envoyer un message via le formulaire de contact
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="block-newsletter__container">
+        <div class="block-newsletter" id="block-newsletter">
+            <p class="block__subtitle">Cet article vous a plu ?</p>
+            <h2>Inscrivez-vous à la <span class="highlighted">newsletter</span></h2>
+            <form class="form">
+                <p class="form__required-message">Les champs précédés d’une astérisque rouge (<span class="required">*</span>) sont obligatoires.</p>
+
+                <div class="block-newsletter__two-columns">
+                    <div class="form__field">
+                        <label for="name">Votre nom <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required autocomplete="name" class="form__input"/>
+                    </div>
+                    <div class="form__field">
+                        <label for="email">Votre adresse e-mail <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required autocomplete="email" class="form__input" aria-describedby="email-description"/>
+                        <p id="email-description" class="form__input-description">Le format attendu de l'email est moi@example.com.</p>
+                    </div>
+                </div>
+
+                <div class="form__checkbox">
+                    <div class="form__checkbox-input" role="checkbox" aria-checked="false" tabindex="0">
+                        <p class="form__checkbox-text">En cochant cette case, vous acceptez que Chloé Corfmat vous envoie sa newsletter. Vos données ne seront jamais partagées ou vendues à des partenaires.</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--submit btn--primary block-newsletter__btn">
+                    <span class="fa-icon fa-solid fa-paper-plane fa-xs" aria-hidden="true"></span>
+                    S'inscrire à la newsletter
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer role="contentinfo" class="footer footer--with-social">
+    <div class="footer-social__container">
+        <ul class="footer-social">
+            <li class="footer-social__item">
+                <a href="https://www.instagram.com/chloecorfmat/" title="Voir mon compte Instagram - Nouvelle fenêtre" class="footer-social__link">
+                    <span class="visually-hidden">Voir mon compte Instagram</span>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="https://www.linkedin.com/in/chloecorfmat/" title="Voir mon compte LinkedIn - Nouvelle fenêtre" class="footer-social__link">
+                    <span class="visually-hidden">Voir mon compte LinkedIn</span>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="https://twitter.com/chloecorfmat" title="Voir mon compte X (nouveau Twitter) - Nouvelle fenêtre" class="footer-social__link">
+                    <span class="visually-hidden">Voir mon compte Twitter</span>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="https://github.com/chloecorfmat" title="Voir mon compte Github - Nouvelle fenêtre" class="footer-social__link">
+                    <span class="visually-hidden">Voir mon compte Instagram</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer__container">
+        <img src="./assets/logo_cream.png" alt="Logo de Chloé Corfmat" class="footer__logo"/>
+        <ul class="footer__list">
+            <li><a href="./mentions-legales.html" class="footer__link">Mentions légales  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+            <li><a href="#" class="footer__link">CGV  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+            <li><a href="#" class="footer__link">Accessibilité  <span class="icon-internal-link fa-solid fa-chevron-right fa-xs" aria-hidden="true"></span></a></li>
+        </ul>
+
+        <ul class="footer__list">
+            <li><a href="#" target="_blank" class="footer__link">Atelier Krouiñ <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+            <li><a href="#" target="_blank" class="footer__link">Mon parcours <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+        </ul>
+    </div>
+</footer>
+<script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+.article--full {
+  width: 100%;
+  background: $snow;
+  box-sizing: border-box;
+
+  &__banner {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 3rem 1rem 0;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+
+    background: $snow;
+    //background: ghostwhite;
+
+    &-header {
+      padding-top: 1rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      margin: -4rem auto 0;
+      padding: 1rem 2rem 0;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+
+  &__title {
+    margin: 1rem 0;
+    font-family: $lexend;
+    font-size: 2rem;
+  }
+
+  &__infos {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      gap: 1rem;
+    }
+
+    &-picture {
+      width: 2.5rem;
+      border-radius: 50%;
+      margin-right: .5rem;
+    }
+
+    &-icon {
+      margin-right: .5rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-text {
+      margin: 0;
+    }
+
+    &-link {
+      color: $poppy;
+
+      &:hover {
+        color: $poppy-700;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      &-list {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-item {
+        width: 30%;
+      }
+    }
+  }
+
+  &__signature {
+    font-family: "Corfmat", cursive;
+    font-size: 1.75rem;
+    text-align: right;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  &__body {
+    display: grid;
+    grid-gap: 2rem;
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(xl) {
+      grid-gap: 5rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__before {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__wysiwyg {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    &__after {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
+}
+
+.article--full__asset--1 {
+  display: block;
+  width: 100%;
+}

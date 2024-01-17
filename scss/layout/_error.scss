@@ -29,6 +29,13 @@
   &__navigation {
     margin: 3rem auto 0;
     text-align: center;
+
+    &-img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 3rem auto;
+    }
   }
 
   &__image {

@@ -1,0 +1,39 @@
+.portrait {
+  border-radius: $border-radius;
+  border: 3px solid $cream;
+  padding: 0 2rem;
+
+  &__picture {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: $corfmat;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+  }
+
+  &__btn {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    width: initial;
+
+    @include media-breakpoint-up(sm) {
+      display: inline-block;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+}

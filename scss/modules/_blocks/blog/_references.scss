@@ -1,0 +1,45 @@
+.block-references {
+  margin-bottom: 1.5rem;
+
+  &__title {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &-item {
+      border-radius: $border-radius;
+      border: 3px solid $cream;
+      padding: .5rem
+    }
+
+    &-title {
+      margin: 0;
+    }
+
+    &-description {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    &-link {
+      color: $poppy;
+      text-decoration: underline;
+      font-size: 1rem;
+
+      &:hover {
+        color: $poppy-600;
+        text-decoration: underline wavy;
+        text-underline-offset: $text-underline-offset;
+      }
+    }
+  }
+}

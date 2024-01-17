@@ -25,6 +25,7 @@
                 <ul class="header-nav__list">
                     <li class="header-nav__item"><a href="/" class="header-nav__link">Accueil</a></li>
                     <li class="header-nav__item"><a href="#offres" class="header-nav__link">Offres</a></li>
+                    <li class="header-nav__item"><a href="./blog/" class="header-nav__link">Blog</a></li>
                     <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
                 </ul>
             </nav>
@@ -325,16 +326,53 @@
         <div class="block-testimonials">
             <div class="block-testimonials__container">
                 <h2>Ils parlent <span class="highlighted">de moi</span></h2>
-                <ul class="block-testimonials__list">
-                    <li class="block-testimonials__item">
-                        <blockquote cite="https://www.linkedin.com/in/chloecorfmat/" class="block-testimonials__blockquote">
-                            <p class="block-testimonials__quote">Je m’adapte à vos besoins et vous propose une offre sur-mesure.</p>
-                            <footer>
-                                <p class="block-testimonials__quote-author">Floriane Delrue, chef de projet chez Klee Group</p>
-                            </footer>
-                        </blockquote>
-                    </li>
-                </ul>
+                <div class="carousel__container" aria-roledescription="carousel" aria-label="Témoignages d'anciens collègues">
+                    <div class="carousel__controls">
+                        <button>
+                            <span class="visually-hidden">Témoignage précédent</span>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button>
+                            <span class="visually-hidden">Témoignage suivant</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <ol class="block-testimonials__list carousel__slides">
+                        <li class="block-testimonials__item carousel__slide-container" role="group" aria-roledescription="slide" aria-labelledby="author-slide-1">
+                            <blockquote cite="https://www.linkedin.com/in/chloecorfmat/" class="block-testimonials__blockquote">
+                                <p class="block-testimonials__quote">J'ai eu l'occasion de travailler avec Chloé lors de son alternance chez Capgemini. Son travail était excellent au regard de sa jeune expérience. Chloé était très impliquée, rigoureuse, possédait des compétences Drupal très solides.
+                                    Il était très agréable de travailler avec Chloé au quotidien, je pouvais toujours compter sur elle pour faire avancer le projet.
+                                    Je vous recommande Chloé sans hésiter !</p>
+                                <footer>
+                                    <p class="block-testimonials__quote-author" id="author-slide-1">Elodie Lebouvier, chef de projet chez Capgemini</p>
+                                </footer>
+                            </blockquote>
+                        </li>
+                        <li class="block-testimonials__item carousel__slide-container" role="group" aria-roledescription="slide" aria-labelledby="author-slide-2">
+                            <blockquote cite="https://www.linkedin.com/in/chloecorfmat/" class="block-testimonials__blockquote">
+                                <p class="block-testimonials__quote">Chloé a été dans mes équipes il y a quelques année maintenant et je garde un souvenir très positif de son travail et de son impact sur le projet.
+                                    Les compétences techniques étaient déjà importantes mais Chloé a aussi une énergie, une motivation, un implication qu'elle sait mettre au service d'une équipe pour atteindre les objectifs, c'est clairement appréciable.
+                                    Des compétences, de l'énergie, de l'écoute, bcp d'atouts pour développer son projet :)
+                                    Bonne continuation Chloé !</p>
+                                <footer>
+                                    <p class="block-testimonials__quote-author" id="author-slide-2">Olivier Canovas, directeur de projet chez Capgemini</p>
+                                </footer>
+                            </blockquote>
+                        </li>
+
+                        <li class="block-testimonials__item carousel__slide-container" role="group" aria-roledescription="slide" aria-labelledby="author-slide-3">
+                            <blockquote cite="https://www.linkedin.com/in/chloecorfmat/" class="block-testimonials__blockquote">
+                                <p class="block-testimonials__quote">J'ai eu le plaisir d'accompagner Chloé pendant son alternance au sein du Département de la Sarthe, dans notre équipe Scrum. Elle a rapidement démontré son aisance dans le développement web, notamment sur Drupal. Elle est également très à l'aise avec les méthodes agiles et a su s'intégrer rapidement à l'équipe.
+                                    Au cours de son alternance, elle a participé à la refonte de notre site institutionnel Sarthe.fr et l'intranet agent du Département. Elle a notamment participé à la réalisation des maquettes graphiques, à la reprise des contenus et à la formation des contributeurs. Elle a fait preuve d'une grande autonomie et d'un excellent sens du travail en équipe.
+                                    Je suis convaincu que Chloé serait un atout pour votre équipe. Elle est une jeune professionnelle compétente, motivée et dynamique.</p>
+                                <footer>
+                                    <p class="block-testimonials__quote-author" id="author-slide-3">François Bouju, chef de projet au Département de la Sarthe (72)</p>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
         <div class="block">
@@ -437,6 +475,7 @@
             <ul class="footer__list">
                 <li><a href="#" target="_blank" class="footer__link">Atelier Krouiñ <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
                 <li><a href="#" target="_blank" class="footer__link">Mon parcours <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
+                <li><a href="./erreur-404-v2.html" target="_blank" class="footer__link">Erreur 404 v2 <span class="icon-external-link fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></span></a></li>
             </ul>
         </div>
     </footer>

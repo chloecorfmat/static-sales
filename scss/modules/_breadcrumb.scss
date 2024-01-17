@@ -1,0 +1,39 @@
+.breadcrumb {
+  margin-bottom: 2rem;
+  &-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    &__item {
+      display: inline;
+      font-size: 1rem;
+
+      & + .breadcrumb-list__item::before {
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f054";
+      }
+
+      &[aria-current="page"] {
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+
+    &__link {
+      color: $poppy;
+      text-decoration: underline;
+
+      &:hover {
+        color: $poppy-700;
+      }
+    }
+  }
+}
+
+
+
+

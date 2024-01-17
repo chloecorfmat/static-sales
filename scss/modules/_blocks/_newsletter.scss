@@ -1,0 +1,35 @@
+.block-newsletter {
+  width: 100%;
+  background: $snow;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+
+  @include media-breakpoint-up(lg) {
+    padding: 3rem;
+
+    &__two-columns {
+      display: flex;
+      gap: 2rem;
+
+      .form__field {
+        width: 50%;
+      }
+    }
+  }
+
+  &__container {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+
+    @include media-breakpoint-up(xxl) {
+      padding: 12rem 15rem;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: auto;
+  }
+}

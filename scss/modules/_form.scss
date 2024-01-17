@@ -68,4 +68,52 @@
       outline: 2px solid $apple;
     }
   }
+
+  &__checkbox {
+    margin: 0 0 2rem;
+
+    &-input {
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: $cream;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: $border-radius;
+
+      }
+
+      &[aria-checked="true"]::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f00c";
+        color: $poppy;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline-color: $apple;
+        outline-offset: .5rem;
+      }
+    }
+
+    &-text {
+      display: inline-block;
+      margin: 0 3rem;
+      font-size: 1rem;
+    }
+
+
+
+  }
 }

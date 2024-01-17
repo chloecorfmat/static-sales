@@ -1,0 +1,14 @@
+.tag {
+  background: $poppy;
+  padding: .25rem .5rem;
+  font-size: .9rem;
+  border-radius: $border-radius;
+  color: $snow;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: $lexend;
+
+  &a:hover {
+    background: $poppy-700;
+  }
+}
