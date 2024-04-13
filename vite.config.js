@@ -21,8 +21,14 @@ export default defineConfig({
         "assetsDir": "wp-content/themes/chloecorfmat/assets",
         "assetsInlineLimit": "0",
         "rollupOptions": {
+            "input": {
+                'index': 'index.html',
+                'error-404-v2': 'erreur-404-v2.html',
+                'article': 'article.html'
+            },
             "output": {
                 "entryFileNames": "wp-content/themes/chloecorfmat/assets/[name].js",
+                //"assetFileNames": "blog/wp-content/themes/chloecorfmat/assets/[name][extname]",
                 "assetFileNames": "wp-content/themes/chloecorfmat/assets/[name][extname]",
             },
         },

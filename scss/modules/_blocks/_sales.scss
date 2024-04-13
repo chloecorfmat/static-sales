@@ -13,6 +13,7 @@
     padding: 3rem 1rem;
     max-width: 1200px;
     margin: auto;
+    background: $cream;
 
     @include media-breakpoint-up(xxl) {
       padding: 12rem 15rem;

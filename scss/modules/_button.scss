@@ -13,12 +13,14 @@
   width: 100%;
   box-sizing: border-box;
 
-  @include media-breakpoint-up(xxl) {
-    width: initial;
-  }
-
   .fa-icon {
     margin-right: .5rem;
+  }
+
+  &-data {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
 
@@ -28,7 +30,7 @@
   }
 
   @include media-breakpoint-up(xxl) {
-    .btn + .btn {
+    .btn-container + .btn-container {
       margin-left: 1rem;
     }
 
@@ -38,7 +40,7 @@
       gap: 1rem;
       justify-content: space-between;
 
-      .btn {
+      .btn-container {
         flex-grow: 1;
       }
     }

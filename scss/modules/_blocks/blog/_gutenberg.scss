@@ -1,0 +1,19 @@
+.gutenberg {
+  &__block {
+    margin-top: 1rem;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 2.3rem;
+    font-family: $corfmat;
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: $border-radius;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+  }
+}
