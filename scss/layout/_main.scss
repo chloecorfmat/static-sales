@@ -2,3 +2,12 @@ main {
   margin: 0;
   padding: 0;
 }
+
+.without-cover {
+  margin-top: 2rem;
+
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 7rem;
+  }
+}
