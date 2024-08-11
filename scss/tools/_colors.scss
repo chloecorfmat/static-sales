@@ -22,8 +22,8 @@ $cream-700: shade-color($cream, 40%) !default;
 $cream-800: shade-color($cream, 60%) !default;
 $cream-900: shade-color($cream, 80%) !default;
 
-$poppy: #de5d5c !default;
-//$poppy: #BD4442 !default;
+$poppy: #c73937 !default;
+//$poppy: #de5d5c !default;
 $poppy-100: tint-color($poppy, 80%) !default;
 $poppy-200: tint-color($poppy, 60%) !default;
 $poppy-300: tint-color($poppy, 40%) !default;
@@ -142,5 +142,10 @@ $theme-colors: (
         "success": $successes,
         "danger": $dangers
 );
+
+$utility-warning: #FFF7DE;
+$utility-info: #CAE5FF;
+$utility-danger: #FFCBCB;
+$utility-success: #BFF9E9;
 
 $white: $cream;

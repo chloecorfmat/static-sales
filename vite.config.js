@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import path from 'path';
 
 export default defineConfig({
     server: {
@@ -24,12 +25,14 @@ export default defineConfig({
             "input": {
                 'index': 'index.html',
                 'error-404-v2': 'erreur-404-v2.html',
-                'article': 'article.html'
+                'article': 'article.html',
+                'blog': 'blog.html',
+                'alternative': 'alternative.html',
+                'alternatives': 'alternatives.html'
             },
             "output": {
                 "entryFileNames": "wp-content/themes/chloecorfmat/assets/[name].js",
-                //"assetFileNames": "blog/wp-content/themes/chloecorfmat/assets/[name][extname]",
-                "assetFileNames": "wp-content/themes/chloecorfmat/assets/[name][extname]",
+                "assetFileNames": "wp-content/themes/chloecorfmat/assets/[name][extname]"
             },
         },
         minify: false

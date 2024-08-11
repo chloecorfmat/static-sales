@@ -130,7 +130,51 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>                    </div>
+                    </div>
+                    <div class="gutenberg__block block-code">
+                        <p class="block-code__file">Fichier : <span class="block-code__filename">script.js</span></p>
+                        <pre>
+                           <code class="language-js">// first, find all the div.code blocks
+document.querySelectorAll('div.code').forEach(el => {
+    // then highlight each
+    hljs.highlightElement(el);
+});</code>
+                        </pre>
+                    </div>
+
+                    <div class="gutenberg__block block-callout block-callout--danger">
+                        <span class="block-callout__icon" aria-hidden="true">⛔</span>
+                        <div class="block-callout__wysiwyg wysiwyg">
+                            <p>qsfqsfqsfqsfsqfqsfqsfqsf</p>
+                            <ul>
+                                <li>fhdfhg</li>
+                                <li>fdfhfhdfhdfhd</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="gutenberg__block block-callout block-callout--info">
+                        <span class="block-callout__icon" aria-hidden="true">ℹ️</span>
+                        <div class="block-callout__wysiwyg wysiwyg">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dolorem explicabo iusto minima modi mollitia nihil non quo tempore unde, voluptatem. Beatae ea explicabo labore minus modi quidem recusandae.</p>
+                        </div>
+
+                    </div>
+                    <div class="gutenberg__block block-callout block-callout--success">
+                        <span class="block-callout__icon" aria-hidden="true">✅️</span>
+                        <div class="block-callout__wysiwyg wysiwyg">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dolorem explicabo iusto minima modi mollitia nihil non quo tempore unde, voluptatem. Beatae ea explicabo labore minus modi quidem recusandae.</p>
+                        </div>
+
+                    </div>
+                    <div class="gutenberg__block block-callout block-callout--warning">
+                        <span class="block-callout__icon" aria-hidden="true">⚠️</span>
+                        <div class="block-callout__wysiwyg wysiwyg">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dolorem explicabo iusto minima modi mollitia nihil non quo tempore unde, voluptatem. Beatae ea explicabo labore minus modi quidem recusandae.</p>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="article--full__after">
                     <div class="block-references">
                         <h2 class="block-references__title">Références</h2>

@@ -16,3 +16,80 @@
     box-sizing: border-box;
   }
 }
+
+.block-code {
+  &__file {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: left;
+    font-weight: 700;
+
+    &name {
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; // same as code
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+  }
+
+  .hljs {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border-radius: $border-radius;
+  }
+
+  pre {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    &__filename {
+      font-size: 1.1rem;
+    }
+
+    .hljs {
+      padding: 2rem;
+      font-size: 1.05rem;
+      line-height: 2;
+    }
+  }
+}
+
+.block-callout {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: yellow;
+  border-radius: $border-radius;
+
+  &__icon {
+    max-width: 10%;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  &__wysiwyg {
+    flex-grow: 1;
+
+    ul {
+      list-style-image: none;
+    }
+  }
+
+  &--danger {
+    background: $utility-danger;
+  }
+
+  &--info {
+    background: $utility-info;
+  }
+
+  &--success {
+    background: $utility-success;
+  }
+
+  &--warning {
+    background: $utility-warning;
+  }
+}
